@@ -1,0 +1,515 @@
+a {
+  text-decoration: none;
+  &:active {
+    color: #000000;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+header {
+  background-color: #ec715f;
+  height: 70px;
+  .centering-row {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      background-image: url(img/logo.png);
+      background-size: auto 100%;
+      width: 150px;
+    }
+    ul {
+      font-size: 16px;
+      display: flex;
+      margin: 0;
+      justify-content: flex-end;
+      height: 70px;
+      li {
+        width: 120px;
+        padding: 0 30px 0 30px;
+        line-height: 70px;
+        a {
+          color: #fafafa;
+          white-space: nowrap;
+          // 折り返しをさせない
+        }
+      }
+    }
+    .mobele-menu {
+      display: none;
+    }
+  }
+}
+
+.main-image {
+  height: 650px;
+  width: 100%;
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  color: #fafafa;
+  .main-image-container {
+    margin: 0 auto;
+    width: 1024px;
+    text-align: center;
+    .heading-text {
+      font-size: 64px;
+      padding-top: 200px;
+      padding-bottom: 10px;
+    }
+    .heading-text-sub {
+      font-size: 20px;
+    }
+  }
+}
+
+.bg {
+  background-color: #eceff1;
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+    .section-1 {
+      width: 100%;
+      text-align: center;
+      color: #000000;
+      h1 {
+        font-size: 32px;
+        margin: 0;
+      }
+      .under-line {
+        height: 3px;
+        width: 70px;
+        background-color: #ec715f;
+        margin: 8px auto 30px auto;
+      }
+      .text-container {
+        margin-bottom: 30px;
+        font-size: 16px;
+      }
+      .image-box {
+        width: 920px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        .image {
+          height: 250px;
+          width: 300px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          background-size: auto 100%;
+          background-position: center;
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+          &:nth-child(n + 3) {
+            margin-bottom: 0;
+          }
+          &:nth-child(1) {
+            background-image: url(img/sketch.jpg);
+          }
+          &:nth-child(2) {
+            background-image: url(img/websuku.png);
+          }
+          &:nth-child(3) {
+            background-image: url(img/write.jpg);
+          }
+          &:nth-child(4) {
+            background-image: url(img/webcamp.png);
+          }
+          &:nth-child(5) {
+            background-image: url(img/talk.jpg);
+          }
+          &:nth-child(6) {
+            background-image: url(img/webcamp-mother.png);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Featureのやつ
+.section-2 {
+  width: 1024px;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  .container {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+      font-size: 32px;
+      color: #000000;
+      margin: 0;
+    }
+    .under-line {
+      height: 3px;
+      width: 70px;
+      background-color: #ec715f;
+      margin: 0 auto;
+      margin-top: 8px;
+      margin-bottom: 30px;
+    }
+    .text-container {
+      font-size: 16px;
+      color: #000000;
+      margin-bottom: 30px;
+    }
+    .wrap {
+      display: flex;
+      justify-content: center;
+      .content-box {
+        width: 320px;
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+        .text-container {
+          text-align: start;
+          margin-bottom: 0;
+        }
+      }
+      .icon-box {
+        font-size: 20px;
+        p {
+          margin: 10px 0 10px 0;
+        }
+        .icon {
+          font-size: 60px;
+        }
+      }
+    }
+  }
+} // Featureのやつ
+
+// 丸おじさんのやつ
+.bg {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  .section-3 {
+    width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+    .under-line {
+      height: 3px;
+      width: 70px;
+      margin: 0 auto;
+      background-color: #ec715f;
+      margin-top: 8px;
+      margin-bottom: 30px;
+    }
+    .text-container {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    .under-box {
+      display: flex;
+      .left-box {
+        width: 512px;
+        .face-icon {
+          background-image: url(img/my-icon.jpg);
+          height: 250px;
+          width: 250px;
+          border-radius: 250px;
+          background-position: center;
+          margin: 0 auto;
+        }
+      }
+      .right-box {
+        text-align: start;
+        width: 512px;
+        .text-container {
+          margin-bottom: 0;
+          h2 {
+            font-size: 20px;
+            margin: 0 0 5px 0;
+            &:last-of-type {
+              margin-top: 20px;
+            }
+          }
+          p {
+            margin: 0;
+            font-size: 16px;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+} // 丸おじさんのやつ
+
+// snsアイコンのやつ
+.section-4 {
+  width: 1024px;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  .container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+      font-size: 32px;
+      color: #000000;
+      margin: 0;
+    }
+    .under-line {
+      margin: 8px auto 30px auto;
+      height: 3px;
+      width: 70px;
+      background-color: #ec715f;
+    }
+    .text-container {
+      font-size: 16px;
+      color: #000000;
+      margin-bottom: 30px;
+    }
+    .under-box {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      .left-box {
+        width: 400px;
+        text-align: start;
+        width: 130px;
+        margin: 0 auto;
+        h3 {
+          font-size: 20px;
+          margin: 0;
+          margin-bottom: 5px;
+          &:last-of-type {
+            margin-top: 20px;
+          }
+        }
+        a {
+          color: 000000;
+          text-decoration: underline;
+          color: black;
+          font-size: 16px;
+        }
+      }
+      .right-box {
+        width: 400px;
+        .sns {
+          width: 170px;
+          margin: 0 auto;
+          .sns-text {
+            margin-bottom: 5px;
+            font-size: 20px;
+            text-align: start;
+            margin-bottom: 5px;
+            font-weight: bold;
+          }
+          .sns-icon {
+            display: flex;
+            justify-content: space-between;
+            font-weight: lighter;
+            font-size: 50px;
+            text-rendering: auto;
+            & > *:nth-child(-n + 2) {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+} // snsアイコンのやつ
+
+footer {
+  height: 60px;
+  background-color: #ec715f;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  color: #fafafa;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 50px;
+    .centering-row {
+      position: relative;
+      width: 90%;
+      .logo {
+        position: absolute;
+        background-image: url(img/logo.png);
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 130px;
+        background-size: contain;
+      }
+      ul {
+        display: none;
+        height: 50px;
+        li {
+          width: 120px;
+          line-height: 50px;
+        }
+      }
+      .mobele-menu {
+        display: block;
+        height: 40px;
+        width: 40px;
+        margin-left: auto;
+        border: 1px solid #ffffff;
+        margin: 5px 5% 5px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .menu-line {
+          height: 2px;
+          width: 25px;
+          background-color: white;
+          &:nth-child(2) {
+            margin: 5px 0 5px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .main-image {
+    background-image: url(img/code.png);
+    .main-image-container {
+      width: 90%;
+      .heading-text {
+        font-size: 40px;
+      }
+      .heading-text-sub {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .bg {
+    padding-bottom: 80px;
+    .container {
+      width: 90%;
+      .section-1 {
+        padding: 0 5%;
+        .image-box {
+          width: 100%;
+          margin: 0 auto;
+          display: block;
+          .image {
+            height: 250px;
+            width: 300px;
+            margin: 0 auto;
+            margin-bottom: 10px !important;
+            &:nth-child(3n) {
+              margin: 0 auto;
+            }
+            &:nth-child(2n-1) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-2 {
+    width: 90%;
+    margin: 0 auto;
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      .wrap {
+        display: block;
+        .content-box {
+          width: 320px;
+          margin: 0 auto 7px auto !important;
+          &:last-child {
+            margin-right: 0;
+          }
+          .text-container {
+            text-align: start;
+          }
+        }
+        .icon-box {
+          font-size: 20px;
+          p {
+            margin: 10px 0 10px 0;
+          }
+          .icon {
+            font-size: 60px;
+          }
+        }
+      }
+    }
+  }
+
+  // 丸おじさんのやつ
+  .bg {
+    width: 100%;
+    .section-3 {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0 5%;
+      .under-box {
+        display: block;
+        .left-box {
+          margin: 0 auto;
+          width: 512px;
+        }
+        .right-box {
+          text-align: center;
+          width: 512px;
+          margin: 0 auto;
+          .text-container {
+            margin-bottom: 0;
+            h2 {
+              margin-top: 13px;
+            }
+          }
+        }
+      }
+    }
+  } // 丸おじさんのやつ
+
+  // snsアイコンのやつ
+  .section-4 {
+    width: 100%;
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      .under-box {
+        width: 100%;
+        display: block;
+        .left-box {
+          width: 400px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        .right-box {
+          width: 400px;
+          margin: 0 auto;
+          .sns {
+            .sns-text {
+              text-align: center;
+              margin-top: 18px;
+            }
+          }
+        }
+      }
+    }
+  } // snsアイコンのやつ
+}
